@@ -15,10 +15,37 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
     
+    
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+       
+        
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        defaults.synchronize()
+        self.tipControl.selectedSegmentIndex=defaults.integer(forKey: "savedPercentage")
+        print(defaults.integer(forKey: "savedPercentage"));
+        
+        calculateTip(Any.self)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        defaults.synchronize()
+        self.tipControl.selectedSegmentIndex=defaults.integer(forKey: "savedPercentage")
+        print(defaults.integer(forKey: "savedPercentage"));
+        
+        calculateTip(Any.self)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -45,7 +72,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onPercentageSwitch(_ sender: Any) {
-        calculateTip(Any)
+        calculateTip(Any.self)
     }
 }
 
