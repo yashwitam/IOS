@@ -1,6 +1,6 @@
 # IOS
 
-# Pre-work - *Name of App Here*
+# Pre-work - *tiPs*
 
 **Tip Calculator** is a tip calculator application for iOS.
 
