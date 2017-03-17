@@ -20,7 +20,16 @@ The following **optional** features are implemented:
 - [x] Using locale-specific currency. Tip and total amount shows the corresponding currecny symbol as per selected from phone settings 
 
 GIF
-http://i.imgur.com/ACm3mE9.gifv --> updated 17/03/2017
+
+Default settings US locale
+http://i.imgur.com/ACm3mE9.gifv
+
+Change of locale on settings page:
+http://i.imgur.com/A0Gk4Zz.gifv
+
+Display currecny symbol on tip calculator
+http://i.imgur.com/Xl8c31O.gifv
+
 
 http://i.imgur.com/UVnLX0o.gifv
 
