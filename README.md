@@ -1,10 +1,8 @@
 # IOS
 
-# Pre-work - *tiPs*
-
 **tiPs** is a tip calculator application for iOS.
 
-Submitted by: **Yash**
+Creator: **Yash**
 
 Time spent: **5** hours spent in total
 
